@@ -147,6 +147,7 @@ import {
   User,
   Phone,
   MapPin,
+  Heart,
   Clock,
   Mail,
   Instagram,
@@ -297,17 +298,39 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Disclaimer */}
-      <div className="border-t border-border py-4 px-4 md:px-8">
-        <div className="container-main text-center">
-          <p className="text-[11px] text-muted-foreground/70">
-            Mutual fund investments are subject to market risks. Please read all scheme-related documents carefully before investing.
-          </p>
-          <p className="text-[11px] text-muted-foreground/50 mt-1">
-            © {new Date().getFullYear()} Alpha Asset Finserv. All rights reserved.
-          </p>
-        </div>
-      </div>
+      <div className="border-t border-primary-foreground/10">
+  <div className="container-main px-4 md:px-8 py-4 flex flex-col items-center gap-2 text-sm opacity-70 text-center">
+
+    {/* Disclaimer */}
+    <p className="whitespace-nowrap text-center overflow-x-auto">
+  Disclaimer: Investments are subject to market risks. Please read all scheme related documents carefully before investing.
+</p>
+
+    {/* Made with StaffArc */}
+    <div className="flex justify-center items-center gap-1">
+      Made with <Heart className="inline h-4 w-4 text-red-500 mx-1" /> by
+      <a
+        href="https://staffarc.in"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-1 text-orange-600 hover:underline"
+      >
+        <img
+          src="https://www.staffarc.in/images/Staffarc-logo.png"
+          alt="StaffArc logo"
+          className="h-5 w-5 object-contain"
+        />
+        StaffArc
+      </a>
+    </div>
+
+    {/* Copyright */}
+    <p>
+      © 2026 Alpha Asset Finserv. All rights reserved.
+    </p>
+
+  </div>
+</div>
     </footer>
   );
 };
