@@ -2,6 +2,40 @@ import { Link } from "react-router-dom";
 import { TrendingUp, PiggyBank, Wallet, BarChart3, Target, Shield, GraduationCap, Briefcase, Landmark, CircleDollarSign, BookOpen, ArrowRight } from "lucide-react";
 import Layout from "@/components/Layout";
 
+// AMC Logo imports
+import sbiLogo from "@/assets/amc/sbi.jpg";
+import hdfcLogo from "@/assets/amc/hdfc.jpg";
+import iciciLogo from "@/assets/amc/icici.jpg";
+import axisLogo from "@/assets/amc/axis.jpg";
+import kotakLogo from "@/assets/amc/kotak.jpg";
+import nipponLogo from "@/assets/amc/nippon.jpg";
+import adityabirlaLogo from "@/assets/amc/adityabirla.jpg";
+import dspLogo from "@/assets/amc/dsp.jpg";
+import franklinLogo from "@/assets/amc/franklin.jpg";
+import hsbcLogo from "@/assets/amc/hsbc.jpg";
+import tataLogo from "@/assets/amc/tata.jpg";
+import utiLogo from "@/assets/amc/uti.jpg";
+import miraeLogo from "@/assets/amc/mirae.jpg";
+import motilalLogo from "@/assets/amc/motilal.jpg";
+import bandhanLogo from "@/assets/amc/bandhan.jpg";
+import bajajLogo from "@/assets/amc/bajaj.jpg";
+import boiLogo from "@/assets/amc/boi.jpg";
+import edelweissLogo from "@/assets/amc/edelweiss.jpg";
+import invescoLogo from "@/assets/amc/invesco.jpg";
+import jmLogo from "@/assets/amc/jm.jpg";
+import licLogo from "@/assets/amc/lic.jpg";
+import naviLogo from "@/assets/amc/navi.jpg";
+import quantLogo from "@/assets/amc/quant.jpg";
+import whiteoakLogo from "@/assets/amc/whiteoak.jpg";
+import abakkusLogo from "@/assets/amc/abakkus.jpg";
+import angeloneLogo from "@/assets/amc/angelone.jpg";
+import threesixtyoneLogo from "@/assets/amc/360one.jpg";
+
+// Platform logos
+import platformsLogo from "@/assets/platforms/platforms.jpg";
+import assetplus1 from "@/assets/platforms/assetplus1.jpg";
+import assetplus2 from "@/assets/platforms/assetplus2.jpg";
+
 const services = [
   { id: "mutual-fund-distribution", name: "Mutual Fund Distribution", icon: TrendingUp, desc: "Facilitating access to mutual fund schemes offered by respective Asset Management Companies (AMCs), based on investors' financial goals and risk profile, in line with applicable SEBI and AMFI guidelines." },
   { id: "sip-facilitation", name: "SIP Facilitation", icon: PiggyBank, desc: "Assistance in understanding and starting SIPs in mutual fund schemes to promote disciplined, long-term investing habits." },
@@ -16,16 +50,35 @@ const services = [
   { id: "loan-against-mf", name: "Loan Against Mutual Funds", icon: BookOpen, desc: "Unlock liquidity without redeeming your investments. We facilitate LAMF through partnered banks and NBFCs." },
 ];
 
-const amcNames = [
-  "SBI Mutual Fund", "HDFC Mutual Fund", "ICICI Prudential", "Axis Mutual Fund", "Kotak Mutual Fund",
-  "Nippon India", "Aditya Birla Sun Life", "DSP Mutual Fund", "Franklin Templeton", "HSBC Mutual Fund",
-  "Tata Mutual Fund", "UTI Mutual Fund", "Mirae Asset", "Motilal Oswal", "Bandhan Mutual Fund",
-  "Bajaj Finserv", "Bank of India MF", "Edelweiss MF", "Invesco MF", "JM Financial MF",
-  "LIC Mutual Fund", "Navi Mutual Fund", "Quant Mutual Fund", "WhiteOak Capital", "Abakkus MF",
-  "Angel One MF", "360 ONE MF",
+const amcLogos = [
+  { name: "SBI Mutual Fund", logo: sbiLogo },
+  { name: "HDFC Mutual Fund", logo: hdfcLogo },
+  { name: "ICICI Prudential", logo: iciciLogo },
+  { name: "Axis Mutual Fund", logo: axisLogo },
+  { name: "Kotak Mutual Fund", logo: kotakLogo },
+  { name: "Nippon India", logo: nipponLogo },
+  { name: "Aditya Birla Sun Life", logo: adityabirlaLogo },
+  { name: "DSP Mutual Fund", logo: dspLogo },
+  { name: "Franklin Templeton", logo: franklinLogo },
+  { name: "HSBC Mutual Fund", logo: hsbcLogo },
+  { name: "TATA Mutual Fund", logo: tataLogo },
+  { name: "UTI Mutual Fund", logo: utiLogo },
+  { name: "Mirae Asset", logo: miraeLogo },
+  { name: "Motilal Oswal", logo: motilalLogo },
+  { name: "Bandhan Mutual Fund", logo: bandhanLogo },
+  { name: "Bajaj Finserv MF", logo: bajajLogo },
+  { name: "Bank of India MF", logo: boiLogo },
+  { name: "Edelweiss MF", logo: edelweissLogo },
+  { name: "Invesco MF", logo: invescoLogo },
+  { name: "JM Financial MF", logo: jmLogo },
+  { name: "LIC Mutual Fund", logo: licLogo },
+  { name: "Navi Mutual Fund", logo: naviLogo },
+  { name: "Quant Mutual Fund", logo: quantLogo },
+  { name: "WhiteOak Capital", logo: whiteoakLogo },
+  { name: "Abakkus MF", logo: abakkusLogo },
+  { name: "Angel One MF", logo: angeloneLogo },
+  { name: "360 ONE MF", logo: threesixtyoneLogo },
 ];
-
-const platforms = ["NJ Wealth", "Prudent", "Wealthy"];
 
 const Services = () => {
   return (
@@ -59,40 +112,50 @@ const Services = () => {
 
           {/* AMC Logos Section */}
           <div className="mb-16">
-            <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">
               <span className="gradient-emerald-text">Empanelled with Multiple AMCs in India</span>
             </h2>
-            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-3">
-              {amcNames.map((name) => (
-                <div key={name} className="bg-card border border-border rounded-lg p-3 flex items-center justify-center text-center min-h-[60px]">
-                  <span className="text-muted-foreground text-xs font-medium">{name}</span>
+            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-9 gap-4">
+              {amcLogos.map((amc) => (
+                <div
+                  key={amc.name}
+                  className="bg-white rounded-lg p-3 flex items-center justify-center aspect-square border border-border hover:border-primary/40 transition-all duration-300 hover:shadow-[0_0_15px_hsl(160_70%_42%/0.15)]"
+                >
+                  <img src={amc.logo} alt={amc.name} className="max-w-full max-h-full object-contain" />
                 </div>
               ))}
             </div>
-            <p className="text-[11px] text-muted-foreground/60 text-center mt-4">
+            <p className="text-[11px] text-muted-foreground/60 text-center mt-6 max-w-3xl mx-auto">
               Disclaimer: Logos displayed are for informational purposes only to indicate our empanelment with respective AMCs. We are not affiliated with, sponsored by, or endorsed by any Asset Management Company.
             </p>
           </div>
 
           {/* Distribution Platforms */}
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
-              <span className="gradient-emerald-text">Associated with National Distribution Platforms</span>
+            <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">
+              <span className="gradient-emerald-text">Associated with National Distribution Platforms in India</span>
             </h2>
-            <div className="flex flex-wrap justify-center gap-4">
-              {platforms.map((name) => (
-                <div key={name} className="bg-card border border-border rounded-lg p-4 px-8 text-center">
-                  <span className="text-muted-foreground text-sm font-medium">{name}</span>
-                </div>
-              ))}
-              <a
-                href="https://www.assetplus.in/mfd/ARN-264745"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="border-2 border-primary rounded-lg p-4 px-8 text-center glow-emerald-sm hover:bg-primary/10 transition-all"
-              >
-                <span className="text-primary font-bold text-sm">ASSETPLUS ⭐</span>
-              </a>
+            <div className="flex flex-col items-center gap-8">
+              {/* Platform logos from document */}
+              <div className="bg-white rounded-xl p-6 border border-border">
+                <img src={platformsLogo} alt="National Distribution Platforms" className="max-h-24 object-contain" />
+              </div>
+              
+              {/* AssetPlus - Highlighted */}
+              <div className="text-center">
+                <p className="text-muted-foreground text-sm mb-4">Our Primary Partner</p>
+                <a
+                  href="https://www.assetplus.in/mfd/ARN-264745"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block border-2 border-primary rounded-xl p-6 px-10 glow-emerald hover:bg-primary/10 transition-all duration-300"
+                >
+                  <div className="flex items-center gap-4">
+                    <img src={assetplus1} alt="AssetPlus" className="h-16 object-contain" />
+                    <img src={assetplus2} alt="AssetPlus Partner" className="h-16 object-contain" />
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>

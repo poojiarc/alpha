@@ -92,6 +92,36 @@ const Footer = () => {
         </div>
       </div>
 
+      {/* Google Map */}
+      <div className="border-t border-border">
+        <div className="container-main px-4 md:px-8 py-8">
+          <h4 className="text-foreground font-semibold mb-4 text-lg text-center">Our Location</h4>
+          <div className="rounded-xl overflow-hidden border border-border glow-emerald-sm">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.5!2d79.9865!3d14.4426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTTCsDI2JzMzLjQiTiA3OcKwNTknMTEuNCJF!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+              width="100%"
+              height="300"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Alpha Asset Finserv Location"
+            />
+          </div>
+          <div className="flex flex-wrap justify-center gap-6 mt-4 text-sm text-muted-foreground">
+            <span className="flex items-center gap-1.5">
+              <Phone className="w-3.5 h-3.5 text-primary" /> 9700505046
+            </span>
+            <span className="flex items-center gap-1.5">
+              <Mail className="w-3.5 h-3.5 text-primary" /> alphaassetfinserv.in@gmail.com
+            </span>
+            <span className="flex items-center gap-1.5">
+              <Clock className="w-3.5 h-3.5 text-primary" /> Mon–Sat: 9AM – 8PM | Sunday: Holiday
+            </span>
+          </div>
+        </div>
+      </div>
+
       {/* Disclaimer */}
       <div className="border-t border-border py-4 px-4 md:px-8">
         <div className="container-main">

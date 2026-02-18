@@ -34,26 +34,53 @@ const Index = () => {
       <section className="section-padding relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent" />
         <div className="container-main relative text-center">
-          <div className="animate-fade-in-up">
-            <img src={logo} alt="Alpha Asset Finserv" className="h-24 md:h-32 mx-auto mb-6" />
-            <p className="text-muted-foreground text-lg mb-2">Our Authorised Partner</p>
-            <a
-              href="https://www.assetplus.in/mfd/ARN-264745"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block text-primary font-semibold text-xl hover:underline mb-8"
-            >
-              ASSETPLUS
-            </a>
-            <div>
+          <div className="animate-fade-in-up max-w-4xl mx-auto">
+            <img src={logo} alt="Alpha Asset Finserv" className="h-24 md:h-32 mx-auto mb-8" />
+            
+            <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
+              Welcome to <span className="gradient-emerald-text">Alpha Asset Finserv</span>
+            </h1>
+            
+            <p className="text-lg md:text-xl text-primary italic font-medium mb-8">
+              Your Partner in Financial Awareness & Long-Term Wealth Creation
+            </p>
+            
+            <div className="text-muted-foreground leading-relaxed text-sm md:text-base space-y-4 text-left md:text-center mb-10">
+              <p>
+                At Alpha Asset Finserv, we provide investment awareness and mutual fund distribution services to individuals and businesses based on their financial goals and risk profile.
+              </p>
+              <p>
+                The firm is led by <strong className="text-foreground">Hemanth Prasad Peta</strong>, Founder of Alpha Asset Finserv, AMFI Registered Mutual Fund Distributor (ARN: 264745) and NISM Certified Professional. Alpha Asset Finserv facilitates access to mutual fund schemes and other financial products offered by respective Asset Management Companies (AMCs).
+              </p>
+              <p>
+                We do not provide any assurance or guarantee of returns. All investments are subject to market risks. Investors are advised to read all scheme related documents carefully before investing.
+              </p>
+              <p>
+                Our focus is on ethical practices, transparency, and investor education, enabling clients to make informed financial decisions aligned with their long-term financial objectives.
+              </p>
+            </div>
+
+            {/* Authorised Partner */}
+            <div className="border-t border-border pt-8">
+              <p className="text-muted-foreground text-lg mb-3">Our Authorised Partner</p>
               <a
                 href="https://www.assetplus.in/mfd/ARN-264745"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-xl gradient-emerald text-primary-foreground font-bold text-lg transition-all duration-300 hover:opacity-90 glow-emerald"
+                className="inline-block text-primary font-bold text-2xl hover:underline mb-6"
               >
-                Start Your Journey Now <ArrowRight className="w-5 h-5" />
+                ASSETPLUS
               </a>
+              <div>
+                <a
+                  href="https://www.assetplus.in/mfd/ARN-264745"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-8 py-4 rounded-xl gradient-emerald text-primary-foreground font-bold text-lg transition-all duration-300 hover:opacity-90 glow-emerald"
+                >
+                  Start Your Journey Now <ArrowRight className="w-5 h-5" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
