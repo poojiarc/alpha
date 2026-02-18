@@ -1,6 +1,6 @@
 import { Target, Compass, Eye, ShieldCheck, Users, BookOpen, TrendingUp, Heart } from "lucide-react";
 import Layout from "@/components/Layout";
-import founderImg from "@/assets/founder.jpg";
+import founderImg from "@/assets/founder.jpeg";
 
 const whyChoose = [
   { icon: ShieldCheck, title: "Transparency", desc: "We follow ethical practices and transparency in all interactions." },

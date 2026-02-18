@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Phone, Mail, MapPin } from "lucide-react";
 import Layout from "@/components/Layout";
-import founderImg from "@/assets/founder.jpg";
+import founderImg from "@/assets/founder.jpeg";
 
 const Contact = () => {
   const [form, setForm] = useState({ name: "", phone: "", message: "" });
@@ -94,7 +94,7 @@ const Contact = () => {
                   type="submit"
                   className="w-full py-3 rounded-lg gradient-emerald text-primary-foreground font-semibold transition-all hover:opacity-90 glow-emerald-sm"
                 >
-                  Submit via WhatsApp →
+                  Submit
                 </button>
               </form>
             </div>

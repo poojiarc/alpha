@@ -32,9 +32,11 @@ import angeloneLogo from "@/assets/amc/angelone.jpg";
 import threesixtyoneLogo from "@/assets/amc/360one.jpg";
 
 // Platform logos
-import platformsLogo from "@/assets/platforms/platforms.jpg";
+import assetplus3 from "@/assets/platforms/assetplus3.jpg"; // Top highlighted
 import assetplus1 from "@/assets/platforms/assetplus1.jpg";
 import assetplus2 from "@/assets/platforms/assetplus2.jpg";
+import platformsLogo from "@/assets/platforms/platforms.jpg";
+
 
 const services = [
   { id: "mutual-fund-distribution", name: "Mutual Fund Distribution", icon: TrendingUp, desc: "Facilitating access to mutual fund schemes offered by respective Asset Management Companies (AMCs), based on investors' financial goals and risk profile, in line with applicable SEBI and AMFI guidelines." },
@@ -131,32 +133,57 @@ const Services = () => {
           </div>
 
           {/* Distribution Platforms */}
-          <div>
-            <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">
-              <span className="gradient-emerald-text">Associated with National Distribution Platforms in India</span>
-            </h2>
-            <div className="flex flex-col items-center gap-8">
-              {/* Platform logos from document */}
-              <div className="bg-white rounded-xl p-6 border border-border">
-                <img src={platformsLogo} alt="National Distribution Platforms" className="max-h-24 object-contain" />
-              </div>
-              
-              {/* AssetPlus - Highlighted */}
-              <div className="text-center">
-                <p className="text-muted-foreground text-sm mb-4">Our Primary Partner</p>
-                <a
-                  href="https://www.assetplus.in/mfd/ARN-264745"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block border-2 border-primary rounded-xl p-6 px-10 glow-emerald hover:bg-primary/10 transition-all duration-300"
-                >
-                  <div className="flex items-center gap-4">
-                    <img src={assetplus1} alt="AssetPlus" className="h-16 object-contain" />
-                    <img src={assetplus2} alt="AssetPlus Partner" className="h-16 object-contain" />
-                  </div>
-                </a>
-              </div>
-            </div>
+          {/* Distribution Platforms */}
+<div>
+  <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">
+    <span className="gradient-emerald-text">
+      Associated with National Distribution Platforms in India
+    </span>
+  </h2>
+
+  <div className="flex flex-col items-center gap-8">
+
+    {/* Top Highlighted Logo */}
+    <div className="bg-white rounded-2xl p-6 px-10 shadow-lg">
+      <img
+        src={assetplus3}
+        alt="AssetPlus"
+        className="max-h-24 object-contain"
+      />
+    </div>
+
+    {/* Primary Partner Section */}
+    <div className="text-center">
+      <p className="text-muted-foreground text-sm mb-4">
+        Our Primary Partner
+      </p>
+
+      <div className="border-2 border-primary rounded-2xl p-6 px-10 glow-emerald transition-all duration-300">
+        <div className="flex items-center justify-center gap-8 flex-wrap">
+
+          <img
+            src={assetplus1}
+            alt="AssetPlus 1"
+            className="h-14 object-contain"
+          />
+
+          <img
+            src={assetplus2}
+            alt="AssetPlus 2"
+            className="h-14 object-contain"
+          />
+
+          <img
+            src={platformsLogo}
+            alt="Distribution Platform"
+            className="h-14 object-contain"
+          />
+
+        </div>
+      </div>
+    </div>
+    </div>
+
           </div>
         </div>
       </section>

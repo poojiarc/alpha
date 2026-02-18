@@ -2,7 +2,9 @@ import { Link } from "react-router-dom";
 import { ArrowRight, TrendingUp, Target, BookOpen, PiggyBank, BarChart3, GraduationCap, Shield, Briefcase, Landmark, CircleDollarSign, Wallet } from "lucide-react";
 import Layout from "@/components/Layout";
 import logo from "@/assets/logo.png";
-import founderImg from "@/assets/founder.jpg";
+import founderImg from "@/assets/founder.jpeg";
+import assetPlusLogo from "@/assets/platforms/assetplus3.jpg";
+
 
 const services = [
   { name: "Mutual Fund Distribution", icon: TrendingUp, desc: "Facilitating access to mutual fund schemes offered by respective AMCs." },
@@ -35,7 +37,7 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent" />
         <div className="container-main relative text-center">
           <div className="animate-fade-in-up max-w-4xl mx-auto">
-            <img src={logo} alt="Alpha Asset Finserv" className="h-24 md:h-32 mx-auto mb-8" />
+            
             
             <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
               Welcome to <span className="gradient-emerald-text">Alpha Asset Finserv</span>
@@ -60,17 +62,25 @@ const Index = () => {
               </p>
             </div>
 
-            {/* Authorised Partner */}
+                {/* Authorised Partner */}
             <div className="border-t border-border pt-8">
-              <p className="text-muted-foreground text-lg mb-3">Our Authorised Partner</p>
+              <h2 className="text-2xl md:text-3xl font-bold mb-4">
+                <span className="gradient-emerald-text">Our Authorised Partner</span>
+              </h2>
+
               <a
                 href="https://www.assetplus.in/mfd/ARN-264745"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block text-primary font-bold text-2xl hover:underline mb-6"
+                className="inline-block mb-6"
               >
-                ASSETPLUS
+                <img
+                  src={assetPlusLogo}
+                  alt="AssetPlus"
+                  className="h-16 md:h-20 mx-auto object-contain hover:scale-105 transition-transform duration-300"
+                />
               </a>
+
               <div>
                 <a
                   href="https://www.assetplus.in/mfd/ARN-264745"
@@ -86,9 +96,13 @@ const Index = () => {
         </div>
       </section>
 
-      {/* About Founder Section */}
       <section className="section-padding bg-secondary/50">
         <div className="container-main">
+
+          {/* Added Heading */}
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">
+            <span className="gradient-emerald-text">About Founder</span>
+          </h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="flex justify-center">
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden border-2 border-primary/30 glow-emerald-sm">
