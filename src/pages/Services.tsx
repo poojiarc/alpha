@@ -150,7 +150,7 @@ const Services = () => {
 
   <div className="flex flex-col items-center gap-8">
 <p className="text-muted-foreground text-sm mb-4">
-        In Associated With
+        In association with
       </p>
     {/* Top Highlighted Logo */}
     <div className="bg-white rounded-2xl p-6 px-10 shadow-lg">
