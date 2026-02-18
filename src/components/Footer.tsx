@@ -181,7 +181,7 @@ const Footer = () => {
               />
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              AMFI Registered Mutual Fund Distributor promoting financial awareness and responsible investing.
+              AMFI Registered Mutual Fund Distributor( ARN-264745 ) promoting financial awareness and responsible investing.
             </p>
           </div>
 

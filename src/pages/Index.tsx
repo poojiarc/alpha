@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, TrendingUp, Target, BookOpen, PiggyBank, BarChart3, GraduationCap, Shield, Briefcase, Landmark, CircleDollarSign, Wallet } from "lucide-react";
+import { ArrowRight, TrendingUp, Target, BookOpen, PiggyBank, BarChart3, GraduationCap, Shield, Briefcase, Landmark, CircleDollarSign, Wallet, Calculator } from "lucide-react";
 import Layout from "@/components/Layout";
 import logo from "@/assets/logo.png";
 import founderImg from "@/assets/founder.jpeg";
@@ -18,6 +18,8 @@ const services = [
   { name: "AIF Distribution", icon: Landmark, desc: "Distribution services for Alternative Investment Fund products." },
   { name: "SIF Distribution", icon: CircleDollarSign, desc: "SEBI-regulated intermediate investment category distribution." },
   { name: "Loan Against Mutual Funds", icon: BookOpen, desc: "Unlock liquidity without redeeming your investments." },
+  { name: "Tax – Awareness & Facilitation (Through Partners)", icon: Calculator, desc: "Investment-related tax planning awareness and facilitation of ITR & GST services through licensed professionals." },
+
 ];
 
 const testimonials = [

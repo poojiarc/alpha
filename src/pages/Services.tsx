@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { TrendingUp, PiggyBank, Wallet, BarChart3, Target, Shield, GraduationCap, Briefcase, Landmark, CircleDollarSign, BookOpen, ArrowRight } from "lucide-react";
+import { TrendingUp, PiggyBank, Wallet, BarChart3, Target, Shield, GraduationCap, Briefcase, Landmark, CircleDollarSign, BookOpen, ArrowRight, Calculator } from "lucide-react";
 import Layout from "@/components/Layout";
 
 // AMC Logo imports
@@ -50,6 +50,13 @@ const services = [
   { id: "aif-distribution", name: "AIF Distribution", icon: Landmark, desc: "Facilitating Distribution services to AIF products offered by SEBI Registered Alternative Investment Fund Managers, subject to suitability and regulatory norms." },
   { id: "sif-distribution", name: "SIF Distribution", icon: CircleDollarSign, desc: "Specialized Investment Funds (SIFs) are a SEBI-regulated, intermediate investment category designed for sophisticated investors, bridging the gap between mutual funds and PMS." },
   { id: "loan-against-mf", name: "Loan Against Mutual Funds", icon: BookOpen, desc: "Unlock liquidity without redeeming your investments. We facilitate LAMF through partnered banks and NBFCs." },
+  {
+  id: "tax-awareness-facilitation",
+  name: "Tax – Awareness & Facilitation (Through Partners)",
+  icon: Calculator,
+  desc: "Investment-related tax planning awareness and facilitation of ITR & GST services through licensed professionals."
+},
+
 ];
 
 const amcLogos = [
@@ -142,7 +149,9 @@ const Services = () => {
   </h2>
 
   <div className="flex flex-col items-center gap-8">
-
+<p className="text-muted-foreground text-sm mb-4">
+        In Associated With
+      </p>
     {/* Top Highlighted Logo */}
     <div className="bg-white rounded-2xl p-6 px-10 shadow-lg">
       <img
@@ -154,9 +163,7 @@ const Services = () => {
 
     {/* Primary Partner Section */}
     <div className="text-center">
-      <p className="text-muted-foreground text-sm mb-4">
-        Our Primary Partner
-      </p>
+      
 
       <div className="border-2 border-primary rounded-2xl p-6 px-10 glow-emerald transition-all duration-300">
         <div className="flex items-center justify-center gap-8 flex-wrap">

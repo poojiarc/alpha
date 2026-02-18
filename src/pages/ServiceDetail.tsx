@@ -94,6 +94,16 @@ const serviceData: Record<string, { title: string; content: string[] }> = {
       "Key benefits include: No need to redeem investments, quick processing, competitive interest rates, and flexible repayment options.",
     ],
   },
+    "tax-awareness-facilitation": {
+    title: "Tax – Awareness & Facilitation (Through Partners)",
+    content: [
+      "We provide awareness regarding tax aspects related to investments and facilitate tax-related services through qualified and licensed professionals.",
+      "1. Tax Planning Awareness related to Investments – Understanding tax-saving investment options such as ELSS, capital gains implications, and long-term tax-efficient investment strategies.",
+      "2. Capital Gains Tax Harvesting Awareness – General awareness regarding capital gains taxation in mutual funds and tax harvesting strategies within regulatory limits.",
+      "3. ITR Filing & GST Services Facilitation – Facilitation of Income Tax Return (ITR) filing and GST services through licensed professionals.",
+    ],  
+  },
+
 };
 
 const ServiceDetail = () => {
