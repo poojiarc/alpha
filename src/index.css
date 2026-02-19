@@ -124,27 +124,16 @@
 html {
   scroll-behavior: smooth;
 }
-/* WhatsApp Floating Button – Android Safe */
+/* WhatsApp Floating Button */
 .whatsapp-fab {
-  position: fixed;
+  position: fixed !important;
   right: 16px;
   bottom: 16px;
   z-index: 99999;
 }
 
-/* Android Chrome fix */
-@supports (-webkit-touch-callout: none) {
-  .whatsapp-fab {
-    position: fixed;
-  }
-}
-
-/* HARD Android fallback */
-@media (max-width: 768px) {
-  .whatsapp-fab {
-    position: sticky;
-    margin-left: auto;
-    margin-right: 16px;
-    bottom: 16px;
-  }
+/* Prevent horizontal scroll */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
 }
