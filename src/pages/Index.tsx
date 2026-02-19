@@ -54,7 +54,7 @@ const Index = () => {
                 At Alpha Asset Finserv, we provide investment awareness and mutual fund distribution services to individuals and businesses based on their financial goals and risk profile.
               </p>
               <p>
-                The firm is led by <strong className="text-foreground">Hemanth Prasad Peta</strong>, Founder of Alpha Asset Finserv, AMFI Registered Mutual Fund Distributor (ARN: 264745) and NISM Certified Professional. Alpha Asset Finserv facilitates access to mutual fund schemes and other financial products offered by respective Asset Management Companies (AMCs).
+                The firm is led by <strong className="text-foreground">Peta Hemanth Prasad </strong>, Founder of Alpha Asset Finserv, AMFI Registered Mutual Fund Distributor (ARN: 264745) and NISM Certified Professional. Alpha Asset Finserv facilitates access to mutual fund schemes and other financial products offered by respective Asset Management Companies (AMCs).
               </p>
               <p>
                 We do not provide any assurance or guarantee of returns. All investments are subject to market risks. Investors are advised to read all scheme related documents carefully before investing.
@@ -108,16 +108,16 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="flex justify-center">
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden border-2 border-primary/30 glow-emerald-sm">
-                <img src={founderImg} alt="Hemanth Prasad Peta" className="w-full h-full object-cover" />
+                <img src={founderImg} alt="Peta Hemanth Prasad" className="w-full h-full object-cover" />
               </div>
             </div>
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                <span className="gradient-emerald-text">Hemanth Prasad Peta</span>
+                <span className="gradient-emerald-text">Peta Hemanth Prasad</span>
               </h2>
               <p className="text-silver font-medium mb-2">Founder, Alpha Asset Finserv</p>
               <p className="text-muted-foreground leading-relaxed">
-                Hemanth Prasad Peta is an Authorized Partner of AssetPlus and Registered under Association of Mutual Funds in India (AMFI), National Stock Exchange (NSE) and NISM Certified Expert under SEBI Regulations & FMVA Certified Professional by CFI, Canada with Extensive Experience on Capital Markets for more than 10 Years.
+                Peta Hemanth Prasad is an Authorized Partner of AssetPlus and Registered under Association of Mutual Funds in India (AMFI), National Stock Exchange (NSE) and NISM Certified Expert under SEBI Regulations & FMVA Certified Professional by CFI, Canada with Extensive Experience on Capital Markets for more than 10 Years.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-3">
                 His approach emphasizes ethical practices, transparency, and investor education, helping investors make informed financial decisions based on their financial goals and risk profile.

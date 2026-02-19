@@ -33,9 +33,9 @@ const Contact = () => {
             {/* Founder Card */}
             <div className="card-premium text-center">
               <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-primary/30 mx-auto mb-4">
-                <img src={founderImg} alt="Hemanth Prasad Peta" className="w-full h-full object-cover" />
+                <img src={founderImg} alt=" Peta Hemanth Prasad " className="w-full h-full object-cover" />
               </div>
-              <h3 className="text-xl font-bold text-foreground">Hemanth Prasad Peta</h3>
+              <h3 className="text-xl font-bold text-foreground">Peta Hemanth Prasad</h3>
               <p className="text-silver text-sm mb-4">Founder, Alpha Asset Finserv</p>
               <p className="text-muted-foreground text-sm mb-4">
                 AMFI Registered | NISM Certified | FMVA Certified

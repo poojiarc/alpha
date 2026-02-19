@@ -19,12 +19,12 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
             <div className="flex justify-center">
               <div className="w-72 h-72 md:w-96 md:h-96 rounded-2xl overflow-hidden border-2 border-primary/30 glow-emerald-sm">
-                <img src={founderImg} alt="Hemanth Prasad Peta" className="w-full h-full object-cover" />
+                <img src={founderImg} alt="Peta Hemanth Prasad " className="w-full h-full object-cover" />
               </div>
             </div>
             <div>
               <h1 className="text-3xl md:text-4xl font-bold mb-2">
-                <span className="gradient-emerald-text">Hemanth Prasad Peta</span>
+                <span className="gradient-emerald-text">Peta Hemanth Prasad</span>
               </h1>
               <p className="text-silver font-medium mb-4">Founder, Alpha Asset Finserv & Tax Zone Financial Services</p>
               <p className="text-muted-foreground leading-relaxed mb-3">
