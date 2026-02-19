@@ -212,12 +212,20 @@ const Footer = () => {
             <div className="flex flex-col gap-3 text-sm">
 
               <a
-                href="https://www.instagram.com/alpha_asset_finserv"
+                href="intent://www.instagram.com/alpha_asset_finserv#Intent;scheme=https;package=com.instagram.android;S.browser_fallback_url=https://www.instagram.com/alpha_asset_finserv;end"
+                onClick={(e) => {
+                  const ua = navigator.userAgent.toLowerCase();
+                  const isAndroid = ua.includes('android');
+                  if (!isAndroid) {
+                    e.preventDefault();
+                    window.open('https://www.instagram.com/alpha_asset_finserv', '_blank', 'noopener,noreferrer');
+                  }
+                }}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+                className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
               >
-                <Instagram className="w-5 h-5 flex-shrink-0" />
+                <Instagram className="w-4 h-4" strokeWidth={2.5} />
                 <span>Instagram</span>
               </a>
 
