@@ -215,10 +215,10 @@ const Footer = () => {
                 href="https://www.instagram.com/alpha_asset_finserv"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+                className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
               >
-                <Instagram className="w-4 h-4" />
-                Instagram
+                <Instagram className="w-5 h-5 flex-shrink-0" />
+                <span>Instagram</span>
               </a>
 
               <a
@@ -302,9 +302,9 @@ const Footer = () => {
   <div className="container-main px-4 md:px-8 py-4 flex flex-col items-center gap-2 text-sm opacity-70 text-center">
 
     {/* Disclaimer */}
-    <p className="whitespace-nowrap text-center overflow-x-auto">
-  Disclaimer: Investments are subject to market risks. Please read all scheme related documents carefully before investing.
-</p>
+     <p className="text-center break-words">
+       Disclaimer: Investments are subject to market risks. Please read all scheme related documents carefully before investing.
+     </p>
 
     {/* Made with StaffArc */}
     <div className="flex justify-center items-center gap-1">
